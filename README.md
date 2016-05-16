@@ -17,6 +17,8 @@ Meteor Leafet Demo  |  [GitHub](https://github.com/bevanhunt/meteor-leaflet-demo
 - [Leaflet Providers: 1.1.7](https://www.npmjs.com/package/leaflet-providers)
 - [Leaflet Spin: 0.1.0](https://github.com/makinacorpus/Leaflet.Spin)
 - [Spin.js: 2.3.2](https://www.npmjs.com/package/spin.js)
+- [Leaflet.FreeDraw: 1.2.2](https://github.com/Wildhoney/Leaflet.FreeDraw)
+- [Leaflet.FreeDraw: 1.2.2](https://github.com/Wildhoney/Leaflet.FreeDraw)
 
 ## Roadmap
 [Roadmap](https://github.com/bevanhunt/meteor-leaflet/milestones)
