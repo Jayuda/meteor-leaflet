@@ -1,0 +1,29 @@
+{
+  "name": "meteor-leaflet",
+  "version": "1.0.0",
+  "description": "leaflet on meteor app",
+  "main": "package.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jayuda/meteor-leaflet.git"
+  },
+  "keywords": [
+    "meteor",
+    "leaflet",
+    "openstreenmap"
+  ],
+  "author": "Y.N Pamungkas Jayuda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jayuda/meteor-leaflet/issues"
+  },
+  "homepage": "https://github.com/Jayuda/meteor-leaflet#readme",
+  "dependencies": {
+    "leaflet-draw": "^0.3.0",
+    "leaflet-geonames": "^0.1.1",
+    "leaflet.freedraw": "^1.2.2"
+  }
+}

@@ -78,6 +78,58 @@ Meteor Leafet Demo  |  [GitHub](https://github.com/bevanhunt/meteor-leaflet-demo
       }
     ```
 
+  - to add drow 
+  ```javascript
+
+    var drawnItems = L.featureGroup().addTo(map);
+
+    map.addControl(new L.Control.Draw({
+        draw: {
+            polyline: false,
+            polygon: true,
+            rectangle: true
+        },
+        edit: {
+            featureGroup: drawnItems,
+            edit: false,
+            remove: true
+        }
+    }));
+
+    map.on('draw:created', function(event) {
+        var layer = event.layer;
+        console.log(event.layer);
+        console.log(event.layerType);
+        console.log(drawnItems);
+        var feature = {
+            options: event.layer.options,
+            layerType: event.layerType
+        };
+        switch (event.layerType) {
+            case 'marker':
+                feature.latlng = event.layer._latlng;
+                break;
+            case 'circle':
+                feature.latlng = event.layer._latlng;
+                feature.radius = event.layer._mRadius;
+                break;
+        }
+        console.log(feature);
+        Markers.insert(feature);
+    });
+
+    map.on('draw:deleted', function(event) {
+        console.log(event);
+        console.log(event.layers._layers);
+        for (var l in event.layers._layers) {
+            console.log(l);
+            Markers.remove({_id: l});
+        }
+    });
+
+
+  ```  
+
 ## Reactive Popups
 
 - in Javascript client-side to create Reactive Popups - more [info on Blaze.renderWithData](http://docs.meteor.com/#/full/blaze_renderwithdata).
