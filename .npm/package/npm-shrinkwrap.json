@@ -13,7 +13,7 @@
     "leaflet-draw": {
       "version": "0.3.0",
       "resolved": "https://registry.npmjs.org/leaflet-draw/-/leaflet-draw-0.3.0.tgz",
-      "from": "leaflet-draw@0.3.0"
+      "from": "https://registry.npmjs.org/leaflet-draw/-/leaflet-draw-0.3.0.tgz"
     },
     "leaflet-geonames": {
       "version": "0.1.1",
@@ -24,6 +24,23 @@
       "version": "1.1.7",
       "resolved": "https://registry.npmjs.org/leaflet-providers/-/leaflet-providers-1.1.7.tgz",
       "from": "https://registry.npmjs.org/leaflet-providers/-/leaflet-providers-1.1.7.tgz"
+    },
+    "leaflet-routing-machine": {
+      "version": "3.0.1",
+      "resolved": "https://registry.npmjs.org/leaflet-routing-machine/-/leaflet-routing-machine-3.0.1.tgz",
+      "from": "leaflet-routing-machine@3.0.1",
+      "dependencies": {
+        "corslite": {
+          "version": "0.0.6",
+          "resolved": "https://registry.npmjs.org/corslite/-/corslite-0.0.6.tgz",
+          "from": "corslite@0.0.6"
+        },
+        "polyline": {
+          "version": "0.0.3",
+          "resolved": "https://registry.npmjs.org/polyline/-/polyline-0.0.3.tgz",
+          "from": "polyline@0.0.3"
+        }
+      }
     },
     "spin.js": {
       "version": "2.3.2",
