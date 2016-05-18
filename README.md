@@ -13,12 +13,15 @@ To provide a Meteor package to quickly build real-time cross-platform map apps.
 Meteor Leafet Demo  |  [GitHub](https://github.com/bevanhunt/meteor-leaflet-demo)  |  [Demo](http://leaflet.meteor.com)
 
 ## Packaged Libraries
-- [Leaflet: 0.7.7](https://www.npmjs.com/package/leaflet)
-- [Leaflet Providers: 1.1.7](https://www.npmjs.com/package/leaflet-providers)
-- [Leaflet Spin: 0.1.0](https://github.com/makinacorpus/Leaflet.Spin)
-- [Spin.js: 2.3.2](https://www.npmjs.com/package/spin.js)
-- [Leaflet.FreeDraw: 1.2.2](https://github.com/Wildhoney/Leaflet.FreeDraw)
-- [Leaflet.FreeDraw: 1.2.2](https://github.com/Wildhoney/Leaflet.FreeDraw)
+```
+  "spin.js": "2.3.2",
+  "leaflet": "0.7.7",
+  "leaflet-providers": "1.1.7",
+  "leaflet-geonames" : "0.1.1",
+  "leaflet-draw" : "0.3.0",
+  "font-awesome" : "4.2.0",
+  "leaflet-routing-machine" : "3.0.1"
+```
 
 ## Roadmap
 [Roadmap](https://github.com/bevanhunt/meteor-leaflet/milestones)
@@ -27,7 +30,7 @@ Meteor Leafet Demo  |  [GitHub](https://github.com/bevanhunt/meteor-leaflet-demo
 - add this package to your Meteor project
 
   ```bash
-    meteor add bevanhunt:leaflet
+    meteor add jayuda:meteor-leaflet
   ```
 
 - add a map div to html
@@ -78,7 +81,7 @@ Meteor Leafet Demo  |  [GitHub](https://github.com/bevanhunt/meteor-leaflet-demo
       }
     ```
 
-  - to add drow 
+  - to add draw 
   ```javascript
 
     var drawnItems = L.featureGroup().addTo(map);
@@ -129,6 +132,34 @@ Meteor Leafet Demo  |  [GitHub](https://github.com/bevanhunt/meteor-leaflet-demo
 
 
   ```  
+
+  - to use SEARCH GEONAMES 
+  ```
+      var control = L.control.geonames({
+        username: 'YOUR_USERNAME',  // Geonames account username.  Must be provided
+        zoomLevel: null,  // Max zoom level to zoom to for location.  If null, will use the map's max zoom level.
+        maxresults: 30,  // Maximum number of results to display per search
+        className: 'glyphicon glyphicon-search',  // class for icon
+        workingClass: 'fa-spin',  // class for search underway
+        featureClasses: ['A', 'H', 'L', 'P', 'R', 'T', 'U', 'V', 'post'],  // feature classes to search against.  See: http://www.geonames.org/export/codes.html
+        baseQuery: 'isNameRequired=true',  // The core query sent to GeoNames, later combined with other parameters above
+        position: 'topleft',
+        markNames: true // show a marker at the location of each geoname found, with an associated popup which shows the name
+    });
+    map.addControl(control);
+    
+  ```
+
+  - to use ROUTING
+  ```
+  L.Routing.control({
+    waypoints: [
+        L.latLng(57.74, 11.94),
+        L.latLng(57.6792, 11.949)
+    ],
+    routeWhileDragging: true
+}).addTo(map);
+  ``` 
 
 ## Reactive Popups
 

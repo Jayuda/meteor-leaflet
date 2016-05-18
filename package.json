@@ -24,6 +24,7 @@
   "dependencies": {
     "leaflet-draw": "^0.3.0",
     "leaflet-geonames": "^0.1.1",
+    "leaflet-routing-machine": "^3.0.1",
     "leaflet.freedraw": "^1.2.2"
   }
 }
