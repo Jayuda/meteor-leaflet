@@ -2,9 +2,10 @@
 
 ## Purpose
 
-To provide a Meteor package to quickly build real-time cross-platform map apps.
+To provide a Meteor package to quickly build real-time cross-platform map apps. Complete leaflet module on Meteor APP. Modules included : Geonames, leaflet-draw, font-awesome
 
 ## Meteor Package
+- [jayuda:meteor-leaflet](https://github.com/Jayuda/meteor-leaflet)
 - [bevanhunt:meteor-leaflet](https://atmospherejs.com/bevanhunt/leaflet)
 - Leaflet Version: 0.7.7 = bevanhunt:meteor-leaflet 2.0.0
 - Leaflet Version: 1.0.0-beta2 = bevanhunt:meteor-leaflet 1.3.1
@@ -22,9 +23,6 @@ Meteor Leafet Demo  |  [GitHub](https://github.com/bevanhunt/meteor-leaflet-demo
   "font-awesome" : "4.2.0",
   "leaflet-routing-machine" : "3.0.1"
 ```
-
-## Roadmap
-[Roadmap](https://github.com/bevanhunt/meteor-leaflet/milestones)
 
 ## Usage
 - add this package to your Meteor project

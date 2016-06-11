@@ -1,9 +1,9 @@
 Package.describe({
   name: "jayuda:meteor-leaflet",
-  summary: "Complate leaflet module on Meteor APP. Modules included : Geonames, leaflet-draw, font-awesome",
+  summary: "Complete leaflet module on Meteor APP. Modules included : Geonames, leaflet-draw, font-awesome",
   git: "https://github.com/Jayuda/meteor-leaflet",
   author: "Y.N Pamungkas Jayuda",
-  version: "0.0.9",
+  version: "0.0.11",
   license: "MIT"
 });
 

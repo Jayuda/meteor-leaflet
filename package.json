@@ -22,9 +22,13 @@
   },
   "homepage": "https://github.com/Jayuda/meteor-leaflet#readme",
   "dependencies": {
+    "leaflet": "^0.7.7",
+    "leaflet-providers": "^1.1.7",
     "leaflet-draw": "^0.3.0",
     "leaflet-geonames": "^0.1.1",
     "leaflet-routing-machine": "^3.0.1",
-    "leaflet.freedraw": "^1.2.2"
+    "leaflet.freedraw": "^1.2.2",
+    "spin.js": "^2.3.2",
+    "font-awesome" : "^4.2.0"
   }
 }
